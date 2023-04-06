@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-ti77tgr5u($e=$w@787o+i&i-a=-8hw_=ubo92q(4$dh)k=%*2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app', 'localhost']
+ALLOWED_HOSTS = ['.vercel.app', 'localhost', "127.0.0.1"]
+
+STRIPE_SECRET_KEY = 'sk_test_51MtSYmCEhxXSFS01mh4rYGWoIIfBSN9PfOAWlch5gcDxkx9J7PzZhamiprF5cndRCuzMmwappUtfvwULPGsIPLtC0076qFB5zw'
 
 
 # Application definition
@@ -44,6 +46,7 @@ INSTALLED_APPS = [
     'djoser',
 
     'product',
+    'order',
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
